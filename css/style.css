@@ -1,0 +1,55 @@
+.billboard {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.bg-nav {
+    background-color: whitesmoke;
+    opacity: 0.95;
+}
+
+.bg-first {
+    background-color: #EEEDEB;
+}
+
+.bg-second {
+    background-color: #fbfcfd;
+}
+
+.bg-third {
+    background-color: #f7f7f7;
+}
+
+.shadow {
+    box-shadow: gray;
+}
+
+.feature-box {
+    padding-bottom: 2rem;
+}
+
+.feature-img {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #5c93e8;
+    border-width: 0.25rem;
+    padding: 0.4rem;
+}
+
+.description-box {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+.picture-box {
+    width: 100%;
+}
+
+.rounded-box {
+    border-radius: 8%;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
