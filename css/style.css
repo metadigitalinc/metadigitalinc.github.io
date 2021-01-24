@@ -36,6 +36,28 @@
     padding: 0.4rem;
 }
 
+.profile-box {
+    padding-bottom: 2rem;
+}
+.profile-box:hover .feature-img {
+    opacity: 0.2;
+}
+
+.profile-box:hover .profile-prompt {
+    opacity: 1;
+}
+
+.profile-prompt {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .description-box {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
@@ -45,7 +67,7 @@
 }
 
 .rounded-box {
-    border-radius: 8%;
+    border-radius: 3rem;
 }
 
 .collapsing {
