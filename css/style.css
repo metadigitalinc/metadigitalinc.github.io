@@ -38,6 +38,7 @@
 
 .profile-box {
     padding-bottom: 2rem;
+    cursor: pointer;
 }
 .profile-box:hover .feature-img {
     opacity: 0.2;

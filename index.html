@@ -9,15 +9,8 @@
         <title>MetaDigital - Payment integrity</title>
 
         <link rel="icon" type="image/png" href="images/logo.png">
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -28,11 +21,11 @@
                         <img src="images/logo.png" width="30" height="30" alt="logo">
                         MetaDigital
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="displayMenu(event)">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav mr-auto" onclick="closeMenu(event)">
                             <li class="nav-item">
                                 <a class="nav-link" href="#product">Product</a>
                             </li>
@@ -60,7 +53,7 @@
                                 <div class="description-box">
                                     <h1 class="font-weight-bold">Payment integrity for the mobile age</h1>
                                     <h4>
-                                        Healthcare claims verification can be hard, time-consuming and expensive. With MetaDigital, your healthcare organization can eliminate fraud, increase healthcare savings and improve member engagement.
+                                        Healthcare claims verification can be hard, messy and expensive. With MetaDigital, you can eliminate fraud, increase healthcare savings and improve member engagement.
                                     </h4>
                                     <a class="btn btn-primary btn-lg" href="" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anesu-1/30min'});return false;">Schedule a call</a>
                                 </div>
@@ -68,7 +61,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="text-center">
-                                    <video autoplay="" loop="" muted="" playsinline="" poster="images/message_verification.jpg" width="100%" height="300">
+                                    <video autoplay="" loop="" muted="" playsinline="" poster="images/message_verification.png" width="100%" height="300">
                                         <source src="images/message_verification.mp4" type="video/mp4">
                                         <source src="images/message_verification.webm" type="video/webm">
                                     </video>
@@ -84,7 +77,7 @@
                             <div class="description-box">
                                 <h1 class="font-weight-bold">Member driven verification</h1>
                                 <h4>
-                                    Unlike traditional solutions, fraudulent claims are denied by members which provides a clear signal of fraud to your organization through a real-time dashboard.
+                                    Unlike traditional solutions, fraudulent claims are denied by members providing a clear signal of fraud.
                                 </h4>
                             </div>
                         </div>
@@ -386,7 +379,39 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="col-md-4">
+                            <div class="text-center profile-box" data-toggle="modal" data-target="#modal8">
+                                <img class="feature-img" src="images/profiles/ian_duncan.png" width="150" height="150" alt="profile picture">
+                                <h4 class="profile-prompt">View profile</h4>
+                                <h4>Ian Duncan</h4>
+                                <h5>Advisor</h5>
+                            </div>
+                            <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content bg-first rounded-box">
+                                        <div class="modal-header">
+                                            <button type="button" class="close invisible" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="text-center picture-box">
+                                                <img class="feature-img" src="images/profiles/ian_duncan.png" width="150" height="150" alt="profile picture">
+                                                <h4 class="modal-title" id="exampleModalLongTitle">Ian Duncan</h4>
+                                                <h5>Advisor</h5>
+                                                <a href="https://www.linkedin.com/in/ian-duncan-4b71821"><img src="images/linkedin.svg" width="15" height="15" alt="linkedin"></a>
+                                            </div>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Ian Duncan is Adjunct Professor of Actuarial Statistics at the University of California Santa Barbara and president of Santa Barbara Actuaries Inc. a healthcare analytics firm. Dr. Duncan holds a graduate degree in Economics from Balliol College, Oxford and a PhD in actuarial statistics from Heriot-Watt University, Edinburgh. He is a fellow of a number of actuarial organizations. He has founded or co-founded a number of healthcare analytics companies, including Solucia Inc. (now part of EXL Service). He is active in public policy and healthcare reform and served on the boards of directors of the Commonwealth of Massachusetts Health Insurance Connector Authority from 2007-2014 and the Society of Actuaries, 2012-2015. He serves on the advisory boards of a number of healthcare start-up companies. He is the author of more than 70 peer-reviewed papers, and several books and book chapters. His latest book, a second edition of “Healthcare Risk Adjustment and Predictive Modeling” (Actex Publications) was published in May 2018.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-md-4">
                             <div class="text-center profile-box" data-toggle="modal" data-target="#modal9">
                                 <img class="feature-img" src="images/profiles/dutch_noss.png" width="150" height="150" alt="profile picture">
@@ -438,9 +463,15 @@
             </section>
         </footer>
     </body>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script>
         $('.navbar-nav>li>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
         });
+
     </script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </html>
