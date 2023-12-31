@@ -854,7 +854,7 @@ Love writing, reading and recording poetry, all forms of music and the outdoors.
         <div class="container">
           <div class="row">
             <div class="col">
-              © Copyright 2023 MetaDigital Inc. All rights reserved.
+              © Copyright <span id="currentyear"></span> MetaDigital Inc. All rights reserved.
             </div>
           </div>
         </div>
@@ -876,6 +876,7 @@ Love writing, reading and recording poetry, all forms of music and the outdoors.
     $('.navbar-nav>li>a').on('click', function () {
       $('.navbar-collapse').collapse('hide')
     })
+    document.getElementById("currentyear").innerHTML = new Date().getFullYear();
   </script>
   <link
     href="https://assets.calendly.com/assets/external/widget.css"
