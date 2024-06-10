@@ -20,7 +20,7 @@
         "Alex runs the data and infrastructure team. He previously worked in venture capital and software consulting. He has an educational background in math and computer science with a masters in Applied Statistics.",
     },
     {
-      name: "Major General Elder Granger",
+      name: "Major General Elder Granger MD",
       title: "Board Director & Advisor",
       link: "https://www.linkedin.com/in/elder-granger-md-mg-usa-retired-9a944416",
       image: "/profiles/elder_granger.png",
