@@ -5,11 +5,10 @@
 <section class="grid grid-cols-1 gap-8 items-center mx-auto max-w-screen-xl sm:grid-cols-2">
 	<div class="col-span-1 my-8">
 		<h1 class="my-4 text-3xl font-bold md:text-4xl lg:text-6xl">
-			Edits, algorithms and models built around you
+			Analytics and Medical Intelligence
 		</h1>
 		<p class="pb-4 text-lg lg:text-xl">
-			Capture more savings with edits, algorithms and analytics configured for your needs in both
-			prepayment and postpayment.
+			Turn healthcare claims data into actionable insights and make more data informed decisions
 		</p>
 		<div class="flex gap-4">
 			<a
@@ -20,7 +19,17 @@
 	</div>
 	<div class="relative col-span-1">
 		<img
-			src="/analysis.png"
+			src="/activity.png"
+			alt="Dashboard"
+			class="absolute -top-8 right-2 md:-right-12 scale-90 rounded-lg border-2 border-gray-800 shadow-[color:hsl(216,_65%,_33%)] shadow-xl"
+		/>
+		<img
+			src="/peer.png"
+			alt="Dashboard"
+			class="absolute -bottom-8 left-2 md:-left-12 scale-90 rounded-lg border-2 border-gray-800 shadow-[color:hsl(216,_65%,_33%)] shadow-xl"
+		/>
+		<img
+			src="/map.png"
 			alt="Dashboard"
 			class="rounded-lg border-2 border-gray-800 shadow-[color:hsl(216,_65%,_33%)] shadow-xl"
 		/>
@@ -35,16 +44,13 @@
 			<div
 				class="pt-6 pr-12 pb-0 pl-12 mr-4 rounded-r-full md:pr-24 border-2 border-[color:hsl(216,_65%,_33%)] overflow-clip"
 			>
-				<img class="w-full" src="/customize.svg" alt="dashboard" />
+				<img class="w-full" src="/outlier.svg" alt="dashboard" />
 			</div>
 			<div class="mx-6 mt-8 md:mt-0">
-				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">
-					Configurable Claim Edits Ready for Deployment
-				</h2>
+				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">Optimize Network Performance</h2>
 				<p class="mb-6 md:text-lg">
-					Take advantage of our ever growing list of edits to capture FWA in both prepayment and
-					postpayment environments. We work with you to configure our edits, rules and algorithms to
-					match your specific policies and provider contracts.
+					Pinpoint high utilization areas and providers for educational opportunities and identify
+					out-of-network utilization drivers.
 				</p>
 			</div>
 		</div>
@@ -54,14 +60,14 @@
 			<div
 				class="pt-6 pr-12 pb-0 pl-12 ml-4 rounded-l-full md:pl-24 border-2 border-[color:hsl(216,_65%,_33%)] overflow-clip"
 			>
-				<img class="w-full" src="/track.svg" alt="dashboard" />
+				<img class="w-full" src="/utilization.svg" alt="dashboard" />
 			</div>
 			<div class="mx-6 mt-8 md:order-first md:mt-0">
-				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">Transparent Claim Flagging</h2>
+				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">Improve Utilization Management</h2>
 				<p class="mb-6 md:text-lg">
-					View every flagged claim in our dashboard to see all details, including why it was
-					flagged, which edit, algorithm, or model flagged the claim, which providers were involved,
-					and which members were affected.
+					Improve health outcomes and lower member cost of care by tracking service usage to prevent
+					over or underutilization and identify high-risk members for intervention programs to lower
+					member cost of care.
 				</p>
 			</div>
 		</div>

@@ -1,9 +1,9 @@
 <script>
-	import '../app.css'
+	import '../app.css';
 
-	import Header from '$lib/images/components/Header.svelte'
-	import Footer from '$lib/images/components/Footer.svelte'
-	import Contact from '$lib/images/components/Contact.svelte'
+	import Header from '$lib/images/components/Header.svelte';
+	import Footer from '$lib/images/components/Footer.svelte';
+	import Contact from '$lib/images/components/Contact.svelte';
 </script>
 
 <Header />
