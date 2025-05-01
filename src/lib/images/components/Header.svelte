@@ -5,6 +5,16 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import IconMenu from '$lib/components/icons/IconMenu.svelte';
 	import IconDown from '$lib/components/icons/IconDown.svelte';
+
+	let markets = [
+		{ link: 'medicaid', name: 'Medicaid FFS & Managed Care Plans' },
+		{ link: 'medicare-advantage', name: 'Medicare Advantage Plans' },
+		{ link: 'pbm', name: 'Pharmacy Benefit Managers (PBMs)' },
+		{ link: 'dental', name: 'Dental Administrators' },
+		{ link: 'wc', name: 'Workers Compensation' },
+		{ link: 'hha', name: 'Home Health Agencies' },
+		{ link: 'whitelabel', name: 'White Label' }
+	];
 </script>
 
 <header class="fixed w-screen top-0 shadow-sm bg-white z-50 shadow-[color:hsl(216,_65%,_66%)]">
@@ -26,60 +36,61 @@
 						<DropdownMenu.Group class="">
 							<DropdownMenu.Label>Products</DropdownMenu.Label>
 							<DropdownMenu.Separator />
-							<DropdownMenu.Item class="cursor-pointer" href="/product/analytics">
+							<DropdownMenu.Item class="cursor-pointer" href="/product/homehealth">
 								<div>
-									<div class="text-xl font-semibold">Pre Pay Payment Accuracy</div>
+									<div class="text-xl font-semibold">CareShield AI for Home Care</div>
 									<div>
-										Capture more savings with FWA edits, algorithms and analytics configured for
-										your needs.
+										Capture more savings with prepay FWA edits, algorithms and analytics configured
+										for your needs.
 									</div>
 								</div>
 							</DropdownMenu.Item>
-							<DropdownMenu.Item class="cursor-pointer" href="/product/scoring">
+							<DropdownMenu.Item class="cursor-pointer" href="/product/pharmacy">
 								<div>
-									<div class="text-xl font-semibold">Provider ScoreCarding</div>
-									<div>Keep track of risk scores for each provider in your network</div>
-								</div>
-							</DropdownMenu.Item>
-							<DropdownMenu.Item class="cursor-pointer" href="/product/bi">
-								<div>
-									<div class="text-xl font-semibold">Analytics and Medical Intelligence</div>
-									<div>Track metrics and spot insights using our dashboard</div>
-								</div>
-							</DropdownMenu.Item>
-							<DropdownMenu.Item class="cursor-pointer" href="/product/audit">
-								<div>
-									<div class="text-xl font-semibold">Audit</div>
+									<div class="text-xl font-semibold">CareShield AI for Pharmacy and Dental</div>
 									<div>
-										Use the auditing case manager to review and verify medical documentation, track
-										cases and create reports.
+										Capture more savings with prepay FWA edits, algorithms and analytics configured
+										for your needs.
 									</div>
 								</div>
 							</DropdownMenu.Item>
+							<!-- <DropdownMenu.Item class="cursor-pointer" href="/product/scoring"> -->
+							<!-- 	<div> -->
+							<!-- 		<div class="text-xl font-semibold">Provider ScoreCarding</div> -->
+							<!-- 		<div>Keep track of risk scores for each provider in your network</div> -->
+							<!-- 	</div> -->
+							<!-- </DropdownMenu.Item> -->
+							<!-- <DropdownMenu.Item class="cursor-pointer" href="/product/bi"> -->
+							<!-- 	<div> -->
+							<!-- 		<div class="text-xl font-semibold">Analytics and Medical Intelligence</div> -->
+							<!-- 		<div>Track metrics and spot insights using our dashboard</div> -->
+							<!-- 	</div> -->
+							<!-- </DropdownMenu.Item> -->
+							<!-- <DropdownMenu.Item class="cursor-pointer" href="/product/audit"> -->
+							<!-- 	<div> -->
+							<!-- 		<div class="text-xl font-semibold">Audit</div> -->
+							<!-- 		<div> -->
+							<!-- 			Use the auditing case manager to review and verify medical documentation, track -->
+							<!-- 			cases and create reports. -->
+							<!-- 		</div> -->
+							<!-- 	</div> -->
+							<!-- </DropdownMenu.Item> -->
 						</DropdownMenu.Group>
 						<DropdownMenu.Group>
 							<DropdownMenu.Label>Serving Clients in US and Canada</DropdownMenu.Label>
 							<DropdownMenu.Separator />
-							<DropdownMenu.Item class="cursor-pointer" href="/market#medicaid">
-								<div>
-									<div class="text-xl font-semibold">Medicaid Agencies & Managed Care Plans</div>
-									<div></div>
-								</div>
-							</DropdownMenu.Item>
-							<DropdownMenu.Item class="cursor-pointer" href="/market#wc">
-								<div>
-									<div class="text-xl font-semibold">Workers Compensation</div>
-								</div>
-							</DropdownMenu.Item>
-							<DropdownMenu.Item class="cursor-pointer" href="/market#tpa">
-								<div>
-									<div class="text-xl font-semibold">Third Party Administrators</div>
-								</div>
-							</DropdownMenu.Item>
+							{#each markets as market}
+								<DropdownMenu.Item class="cursor-pointer" href="/market/{market.link}">
+									<div>
+										<div class="text-xl font-semibold">{market.name}</div>
+									</div>
+								</DropdownMenu.Item>
+							{/each}
 						</DropdownMenu.Group>
 					</div>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>
+			<a href="/resources" class="relative text-xl font-semibold">Resources</a>
 			<a href="/about" class="relative text-xl font-semibold">About</a>
 		</div>
 
@@ -100,56 +111,81 @@
 				</Button>
 			</Sheet.Trigger>
 			<Sheet.Content side="left">
-				<nav class="grid gap-6 text-lg font-medium">
+				<nav class="grid gap-y-2 h-full text-lg font-medium grid-rows-12">
 					<Sheet.Close class="text-left">
 						<a href="/" class="flex gap-2 items-center text-lg font-semibold">
 							<img src={svelteLogo} class="w-12 h-12" alt="MetaDigital" />
 							<span class="sr-only">MetaDigital</span>
 						</a>
 					</Sheet.Close>
-					<div class="text-sm">Products</div>
-					<hr />
+					<div class="grid overflow-y-scroll gap-6 row-span-10">
+						<div class="text-sm">Products</div>
+						<hr />
+						<Sheet.Close class="text-left">
+							<a href="/product/homehealth" class="text-muted-foreground hover:text-foreground"
+								>CareShield AI for Home Care</a
+							>
+						</Sheet.Close>
+						<Sheet.Close class="text-left">
+							<a href="/product/pharmacy" class="text-muted-foreground hover:text-foreground"
+								>CareShield AI for Pharmacy and Dental</a
+							>
+						</Sheet.Close>
+						<!-- <Sheet.Close class="text-left"> -->
+						<!-- 	<a href="/product/analytics" class="text-muted-foreground hover:text-foreground"> -->
+						<!-- 		Pre Pay Payment Accuracy -->
+						<!-- 	</a> -->
+						<!-- </Sheet.Close> -->
+						<!-- <Sheet.Close class="text-left"> -->
+						<!-- 	<a href="/product/scoring" class="text-muted-foreground hover:text-foreground" -->
+						<!-- 		>Provider ScoreCarding</a -->
+						<!-- 	> -->
+						<!-- </Sheet.Close> -->
+						<!-- <Sheet.Close class="text-left"> -->
+						<!-- 	<a href="/product/bi" class="text-muted-foreground hover:text-foreground"> -->
+						<!-- 		Analytics and Medical Intelligence -->
+						<!-- 	</a> -->
+						<!-- </Sheet.Close> -->
+						<!-- <Sheet.Close class="text-left"> -->
+						<!-- 	<a href="/product/audit" class="text-muted-foreground hover:text-foreground"> Audit </a> -->
+						<!-- </Sheet.Close> -->
+						<div class="mt-8 text-sm">Markets</div>
+						<hr />
+
+						{#each markets as market}
+							<Sheet.Close class="text-left">
+								<a href="/market/{market.link}" class="text-muted-foreground hover:text-foreground">
+									{market.name}
+								</a>
+							</Sheet.Close>
+						{/each}
+
+						<!-- <Sheet.Close class="text-left"> -->
+						<!-- 	<a href="/market#medicaid" class="text-muted-foreground hover:text-foreground" -->
+						<!-- 		>Medicaid Agencies & Managed Care Plans</a -->
+						<!-- 	> -->
+						<!-- </Sheet.Close> -->
+						<!-- <Sheet.Close class="text-left"> -->
+						<!-- 	<a href="/market#wc" class="text-muted-foreground hover:text-foreground" -->
+						<!-- 		>Workers Compensation</a -->
+						<!-- 	> -->
+						<!-- </Sheet.Close> -->
+						<!-- <Sheet.Close class="text-left"> -->
+						<!-- 	<a href="/market#tpa" class="text-muted-foreground hover:text-foreground" -->
+						<!-- 		>Third Party Administrators</a -->
+						<!-- 	> -->
+						<!-- </Sheet.Close> -->
+						<div class="mt-8 text-sm">Learn More</div>
+						<hr />
+						<Sheet.Close class="text-left">
+							<a href="/resources" class="text-muted-foreground hover:text-foreground">Resources</a>
+						</Sheet.Close>
+						<Sheet.Close class="text-left">
+							<a href="/about" class="text-muted-foreground hover:text-foreground">About us</a>
+						</Sheet.Close>
+						<div></div>
+					</div>
 					<Sheet.Close class="text-left">
-						<a href="/product/analytics" class="text-muted-foreground hover:text-foreground">
-							Pre Pay Payment Accuracy
-						</a>
-					</Sheet.Close>
-					<Sheet.Close class="text-left">
-						<a href="/product/scoring" class="text-muted-foreground hover:text-foreground"
-							>Provider ScoreCarding</a
-						>
-					</Sheet.Close>
-					<Sheet.Close class="text-left">
-						<a href="/product/bi" class="text-muted-foreground hover:text-foreground">
-							Analytics and Medical Intelligence
-						</a>
-					</Sheet.Close>
-					<Sheet.Close class="text-left">
-						<a href="/product/audit" class="text-muted-foreground hover:text-foreground"> Audit </a>
-					</Sheet.Close>
-					<div class="mt-8 text-sm">Markets</div>
-					<hr />
-					<Sheet.Close class="text-left">
-						<a href="/market#medicaid" class="text-muted-foreground hover:text-foreground"
-							>Medicaid Agencies & Managed Care Plans</a
-						>
-					</Sheet.Close>
-					<Sheet.Close class="text-left">
-						<a href="/market#wc" class="text-muted-foreground hover:text-foreground"
-							>Workers Compensation</a
-						>
-					</Sheet.Close>
-					<Sheet.Close class="text-left">
-						<a href="/market#tpa" class="text-muted-foreground hover:text-foreground"
-							>Third Party Administrators</a
-						>
-					</Sheet.Close>
-					<div class="mt-8 text-sm">About us</div>
-					<hr />
-					<Sheet.Close class="text-left">
-						<a href="/about" class="text-muted-foreground hover:text-foreground">Team</a>
-					</Sheet.Close>
-					<Sheet.Close class="absolute bottom-9 mt-auto text-left">
 						<a
 							class="uppercase font-semibold py-4 px-14 bg-[color:hsl(216,_65%,_33%)] hover:bg-[color:hsl(216,_65%,_50%)] text-white rounded-md"
 							href="#contact">Contact us</a

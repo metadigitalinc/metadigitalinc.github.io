@@ -34,7 +34,7 @@
 			</div>
 			<div class="mx-6 mt-8 md:mt-0">
 				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">
-					Medicaid Agencies & Managed Care Plans
+					Medicaid FFS &amp; Managed Care Plans
 				</h2>
 				<p class="md:text-lg">
 					Use edits, algorithms and models designed to work with your claims for payment integrity
@@ -51,6 +51,81 @@
 					<li>Massage therapy</li>
 					<li>Mental health</li>
 					<li>Other</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="medicare" class="">
+	<div class="mx-auto max-w-screen-xl">
+		<div
+			class="gap-8 items-center py-8 mx-auto max-w-screen-xl sm:pt-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16"
+		>
+			<div
+				class="pt-6 pr-12 pb-0 pl-12 mr-4 rounded-r-full md:pr-24 border-2 border-[color:hsl(216,_65%,_33%)] overflow-clip"
+			>
+				<img class="w-full" src="/injury.svg" alt="dashboard" />
+			</div>
+			<div class="mx-6 mt-8 md:mt-0">
+				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">Medicare Advantage Plans</h2>
+				<p class="md:text-lg">
+					Use edits, algorithms and models designed to work with your claims for payment integrity
+					and optimizing network performance
+				</p>
+				<ul class="grid grid-cols-2 gap-2 mt-2 mb-6 md:text-lg">
+					<li>Pharmacy</li>
+					<li>Dental</li>
+					<li>Home Health</li>
+					<li>Personal Care</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="pbm" class="">
+	<div class="mx-auto max-w-screen-xl">
+		<div
+			class="gap-8 items-center py-8 mx-auto max-w-screen-xl sm:pt-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16"
+		>
+			<div
+				class="pt-6 pr-12 pb-0 pl-12 mr-4 rounded-r-full md:pr-24 border-2 border-[color:hsl(216,_65%,_33%)] overflow-clip"
+			>
+				<img class="w-full" src="/pills.svg" alt="dashboard" />
+			</div>
+			<div class="mx-6 mt-8 md:mt-0">
+				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">
+					Pharmacy Benefit Managers (PBMs)
+				</h2>
+				<p class="md:text-lg">
+					Use edits, algorithms and models designed to work with your claims for payment integrity
+					and optimizing network performance
+				</p>
+				<ul class="grid grid-cols-2 gap-2 mt-2 mb-6 md:text-lg">
+					<li>Pharmacy</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="dental" class="">
+	<div class="mx-auto max-w-screen-xl">
+		<div
+			class="gap-8 items-center py-8 mx-auto max-w-screen-xl sm:pt-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16"
+		>
+			<div
+				class="pt-6 pr-12 pb-0 pl-12 mr-4 rounded-r-full md:pr-24 border-2 border-[color:hsl(216,_65%,_33%)] overflow-clip"
+			>
+				<img class="w-full" src="/files.svg" alt="dashboard" />
+			</div>
+			<div class="mx-6 mt-8 md:mt-0">
+				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">Dental Administrators</h2>
+				<p class="md:text-lg">
+					Use edits, algorithms and models designed to work with your claims for payment integrity
+					and optimizing network performance
+				</p>
+				<ul class="grid grid-cols-2 gap-2 mt-2 mb-6 md:text-lg">
+					<li>Dental</li>
 				</ul>
 			</div>
 		</div>
@@ -85,7 +160,7 @@
 		</div>
 	</div>
 </section>
-<section id="tpa" class="">
+<section id="hha" class="">
 	<div class="mx-auto max-w-screen-xl">
 		<div
 			class="gap-8 items-center py-8 mx-auto max-w-screen-xl sm:pt-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16"
@@ -93,24 +168,38 @@
 			<div
 				class="pt-6 pr-12 pb-0 pl-12 mr-4 rounded-r-full md:pr-24 border-2 border-[color:hsl(216,_65%,_33%)] overflow-clip"
 			>
-				<img class="w-full" src="/files.svg" alt="dashboard" />
+				<img class="w-full" src="/hha.svg" alt="dashboard" />
 			</div>
 			<div class="mx-6 mt-8 md:mt-0">
-				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">Third Party Administrators</h2>
+				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">Home Health Agencies</h2>
 				<p class="md:text-lg">
 					Use edits, algorithms and models designed to work with your claims for payment integrity
 					and optimizing network performance
 				</p>
 				<ul class="grid grid-cols-2 gap-2 mt-2 mb-6 md:text-lg">
-					<li>Pharmacy</li>
-					<li>Dental</li>
-					<li>Vision</li>
-					<li>Physiotherapy</li>
-					<li>Chiropractor</li>
-					<li>Massage therapy</li>
-					<li>Mental health</li>
-					<li>Other</li>
+					<li>Skilled care</li>
+					<li>Personal care</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="whitelabel" class="">
+	<div class="mx-auto max-w-screen-xl">
+		<div
+			class="gap-8 items-center py-8 mx-auto max-w-screen-xl sm:pt-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16"
+		>
+			<div
+				class="pt-6 pr-12 pb-0 pl-12 mr-4 rounded-r-full md:pr-24 border-2 border-[color:hsl(216,_65%,_33%)] overflow-clip"
+			>
+				<img class="w-full" src="/white-label.svg" alt="dashboard" />
+			</div>
+			<div class="mx-6 mt-8 md:mt-0">
+				<h2 class="mb-4 text-4xl font-extrabold tracking-tight">White Label</h2>
+				<p class="md:text-lg">
+					Use edits, algorithms and models designed to work with your claims for payment integrity
+					and optimizing network performance
+				</p>
 			</div>
 		</div>
 	</div>

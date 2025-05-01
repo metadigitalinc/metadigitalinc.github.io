@@ -8,7 +8,7 @@
 
 <Header />
 
-<main class="my-32 mx-4 space-y-32 md:my-40">
+<main class="my-16 mx-4 space-y-32 md:my-40">
 	<slot />
 	<Contact />
 </main>

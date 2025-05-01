@@ -10,8 +10,8 @@
 
 <section class="grid grid-cols-1 gap-8 items-center mx-auto max-w-screen-xl sm:grid-cols-2">
 	<div class="col-span-1 my-8">
-		<h1 class="my-4 text-2xl font-bold md:text-3xl lg:text-4xl">
-			Preemptive Fraud, Waste and Abuse Defense for Diverse Care Services
+		<h1 class="my-4 text-3xl font-extrabold md:text-4xl lg:text-6xl">
+			Preemptive Fraud, Waste and Abuse Defense for Home Health &amp; Personal Care Services
 		</h1>
 		<p class="pb-4 text-lg">
 			Ensuring integrity and accuracy in specialized, high-volume healthcare areas
@@ -44,12 +44,8 @@
 			<Carousel.Root class="mx-auto w-48 sm:w-56 lg:w-80">
 				<Carousel.Content>
 					<Carousel.Item>
-						<div class="text-3xl font-bold">$1.8 Billion</div>
-						<div>Total</div>
-					</Carousel.Item>
-					<Carousel.Item>
 						<div class="text-3xl font-bold">$600 Million</div>
-						<div>Homecare</div>
+						<div>Home health &amp; Personal Care</div>
 					</Carousel.Item>
 					<Carousel.Item>
 						<div class="text-3xl font-bold">$330 Million</div>
